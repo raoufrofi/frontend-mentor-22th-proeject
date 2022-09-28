@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>Base Apparel coming soon page</title>
+  </head>
+  <body
+    class="w-full h-screen md:grid md:grid-cols-[1fr_1fr] lg:grid-cols-[1.5fr_1fr] md:items-center"
+  >
+    <main
+      class="mx-auto max-w-[400px] md:bg-[url('images/bg-pattern-desktop.svg')] bg-center bg-cover md:max-w-full md:h-screen md:grid items-center lg:p-12"
+    >
+      <img class="p-8 lg:w-[220px] w-[180px]" src="images/logo.svg" alt="" />
+      <div class="md:hidden">
+        <img class="block" width="100%" src="images/hero-mobile.jpg" alt="" />
+      </div>
+      <article class="text-center p-8 font-josefin md:text-left lg:pr-56">
+        <h1 class="text-[2.5rem] md:text-5xl lg:text-7xl leading-[1] uppercase mb-4">
+          <p class="text-Desaturated-Red font-light">We're</p>
+          <p class="tracking-[5px] text-dark-Grayish-red">coming<br />soon</p>
+        </h1>
+        <p class="text-[14px] md:text-base text-Desaturated-Red mb-6 lg:text-lg">
+          Hello fellow shoppers! We're currently building our new fashion store. Add your
+          email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <div class="relative">
+          <input
+            id="input"
+            class="text-[14px] border-[1px] border-Desaturated-Red rounded-full w-full px-4 py-3 placeholder:text-Desaturated-Red outline-none lg:placeholder:text-base text-Desaturated-Red text-base"
+            type="email"
+            placeholder="Email Address"
+          />
+          <p
+            class="error text-gradient-to-2 text-[14px] absolute top-full pt-4 left-4"
+          ></p>
+          <img class="absolute top-[50%] left-[70%] translate-y-[-50%]" src="" alt="" />
+          <i
+            class="fa-solid fa-chevron-right absolute top-[50%] translate-y-[-50%] right-0 bg-gradient-to-tr from-gradient-from-2 to-gradient-to-2 text-white px-8 py-4 rounded-full hover:scale-[1.1] cursor-pointer transition-all duration-300 hover:bg-soft-red"
+          ></i>
+        </div>
+      </article>
+    </main>
+    <div class="h-screen overflow-hidden hidden md:block">
+      <img class="object-cover w-full h-full" src="images/hero-desktop.jpg" alt="" />
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
